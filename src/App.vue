@@ -22,6 +22,17 @@
             >
           </h1>
         </div>
+        <div class="mt-32">
+          <h2 class="text-sm">
+            Powered by
+            <a href="https://giphy.com" target="_blank">
+              <img
+                class="inline-block w-20"
+                src="./assets/Giphy_wordmark.png"
+              />
+            </a>
+          </h2>
+        </div>
       </footer>
     </div>
   </div>
