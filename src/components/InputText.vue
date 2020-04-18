@@ -47,7 +47,8 @@ export default {
         '🥔 :)',
         'Go corona',
         'javascript is amazing',
-        'Loosers'
+        'Loosers',
+        'evil cat'
       ],
       plcehldr: ''
     }
