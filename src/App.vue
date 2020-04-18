@@ -29,6 +29,9 @@
 <style>
 body {
   @apply bg-yellow-300;
+  background-image: url('~@/assets/starry.png');
+  background-size: 500px;
+  background-position: top;
 }
 .main-container {
   min-height: 100vh;
