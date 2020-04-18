@@ -30,7 +30,7 @@
 body {
   @apply bg-yellow-300;
   background-image: url('~@/assets/starry.png');
-  background-size: 500px;
+  background-size: 200px;
   background-position: top;
 }
 .main-container {
