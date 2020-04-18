@@ -17,7 +17,8 @@ Vue.use(VueToast)
 import VueAnalytics from 'vue-analytics'
 
 Vue.use(VueAnalytics, {
-  id: 'UA-153865454-2'
+  id: 'UA-153865454-2',
+  router
 })
 
 import './assets/tailwind.css'
