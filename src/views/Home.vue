@@ -1,18 +1,32 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <InputText @textChange="setInputStr"></InputText>
+
+    <GifBox :text="inputStr"></GifBox>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import InputText from '@/components/InputText'
+import GifBox from '@/components/GifBox'
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
-    HelloWorld
+    InputText,
+    GifBox
+  },
+  data() {
+    return {
+      inputStr: ''
+    }
+  },
+  methods: {
+    setInputStr(event) {
+      console.log('event')
+      this.inputStr = event
+    }
   }
-};
+}
 </script>
