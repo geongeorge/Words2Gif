@@ -14,6 +14,12 @@ import 'vue-toast-notification/dist/theme-default.css'
 
 Vue.use(VueToast)
 
+import VueAnalytics from 'vue-analytics'
+
+Vue.use(VueAnalytics, {
+  id: 'UA-153865454-2'
+})
+
 import './assets/tailwind.css'
 
 Vue.config.productionTip = false
