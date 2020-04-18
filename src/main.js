@@ -1,11 +1,24 @@
-import Vue from "vue";
-import App from "./App.vue";
-import "./registerServiceWorker";
-import router from "./router";
+import Vue from 'vue'
+import App from './App.vue'
+import './registerServiceWorker'
+import router from './router'
 
-Vue.config.productionTip = false;
+import VueClipboard from 'vue-clipboard2'
+
+Vue.use(VueClipboard)
+
+import VueToast from 'vue-toast-notification'
+// Import any of available themes
+import 'vue-toast-notification/dist/theme-default.css'
+//import 'vue-toast-notification/dist/theme-sugar.css';
+
+Vue.use(VueToast)
+
+import './assets/tailwind.css'
+
+Vue.config.productionTip = false
 
 new Vue({
   router,
   render: h => h(App)
-}).$mount("#app");
+}).$mount('#app')
