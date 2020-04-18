@@ -1,14 +1,9 @@
 <template>
   <div class="about">
-    <h1>
-      Made by
-      <a
-        class="font-bold underline"
-        href="https://geongeorge.com/"
-        target="_blank"
-        >Geon</a
-      >
-      😇
-    </h1>
+    <p>Uses Giphy</p>
+    <p>Source code here</p>
+    <p class="mt-10">
+      <router-link class="font-bold underline" to="/">go back home</router-link>
+    </p>
   </div>
 </template>

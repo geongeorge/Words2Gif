@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="opacity-75">
     <vue-content-loading :width="300" :height="300">
       <rect rx="4" ry="4" width="300" height="300" />
     </vue-content-loading>

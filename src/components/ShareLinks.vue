@@ -8,7 +8,7 @@
       >Tweet</a
     >
     <button
-      class="border rounded px-2 hover:bg-green-200 mx-2"
+      class="border rounded p-1 px-2 bg-gray-900 text-white font-bold hover:bg-white hover:text-gray-900 mx-2"
       v-clipboard:copy="url"
       v-clipboard:success="onCopy"
     >

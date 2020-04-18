@@ -54,6 +54,7 @@ export default {
   },
   methods: {
     sendEvent() {
+      console.log('chaneg')
       this.$emit('textChange', this.inputString)
     },
     randomizePlaceholder() {
@@ -67,7 +68,7 @@ export default {
     this.randomizePlaceholder()
     setInterval(() => {
       this.randomizePlaceholder()
-    }, 3000)
+    }, 2000)
   },
   created() {
     //check params

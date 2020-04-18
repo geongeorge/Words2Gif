@@ -11,6 +11,12 @@
         :word="lt.word"
         :url="lt.url"
       ></GifSingleWord>
+      <div
+        v-if="gifs.length <= 0"
+        class="font-extrabold text-gray-600 mt-10 border border-dashed rounded border-gray-600 w-32 h-32 mx-auto py-10"
+      >
+        No gifs
+      </div>
     </div>
   </div>
 </template>

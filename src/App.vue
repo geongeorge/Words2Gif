@@ -1,17 +1,35 @@
 <template>
-  <div class="container main-container px-2">
-    <div id="app" class="mt-16">
+  <div class="container main-container w-full">
+    <div id="app" class="mt-16 px-2">
       <router-view />
       <footer>
-        <div id="nav">
-          <router-link to="/">Home</router-link> |
-          <router-link to="/about">About</router-link>
+        <div class="mt-3">
+          <h1>
+            Made by
+            <a
+              class="font-bold underline"
+              href="https://geongeorge.com/"
+              target="_blank"
+              >Geon</a
+            >
+            😇
+
+            <router-link
+              class="font-bold underline"
+              v-if="$route.path != '/about'"
+              to="/about"
+              >About</router-link
+            >
+          </h1>
         </div>
       </footer>
     </div>
   </div>
 </template>
 <style>
+body {
+  @apply bg-yellow-300;
+}
 .main-container {
   min-height: 100vh;
 }
@@ -21,20 +39,15 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background: white;
-}
-
-#nav {
-  padding: 30px;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  @apply text-gray-600;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  @apply text-gray-900;
 }
 footer {
   margin-top: 50px;

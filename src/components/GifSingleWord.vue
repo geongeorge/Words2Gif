@@ -1,5 +1,5 @@
 <template>
-  <div class="w-32 m-1 inline-block">
+  <div class="w-48 m-1 inline-block">
     <div v-if="!isLoaded">
       <ContentLoader></ContentLoader>
     </div>
